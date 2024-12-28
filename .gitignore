@@ -1,0 +1,64 @@
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+*.user
+*.suo
+*.cache
+*.log
+
+# Visual Studio Code
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
+
+# Build Directories
+Debug/
+Release/
+x64/
+x86/
+build/
+out/
+
+# C++ Compiled Files
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.so
+*.pdb
+*.idb
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+
+# IDE-specific Files
+*.code-workspace
+*.workspace
+*.code-workspace
+*.idea/
+*.ncb
+*.aps
+*.iobj
+*.ipdb
+
+# Other
+*.log
+*.tlog
+*.lastbuildstate
+
+# Temporary Files
+*.tmp
+*.temp
+~$*
+*.bak
+*.swp
+
+# Generated Files
+*.sln.docstates
+
