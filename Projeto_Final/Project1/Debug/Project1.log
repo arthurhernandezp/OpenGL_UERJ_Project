@@ -1,0 +1,9 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: O diretório intermediário (Debug\) contém arquivos compartilhados de outro projeto (Project1.vcxproj). Isso pode levar a um comportamento incorreto de limpeza e recompilação.
+  main.cpp
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.h(37,27): warning C4305: 'inicializando': truncamento de 'double' para 'float'
+  (compilando o arquivo fonte 'main.cpp')
+  
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.h(38,25): warning C4305: 'inicializando': truncamento de 'double' para 'float'
+  (compilando o arquivo fonte 'main.cpp')
+  
+  Project1.vcxproj -> C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Debug\ProjetoUERJ.exe
