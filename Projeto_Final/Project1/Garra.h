@@ -52,7 +52,7 @@ private:
 	float sizeHand = 20.0;
 	float sizeClampPart = 10.0;
 	float diameterBase = 20.0;
-	float heightBase = 5;
+	float heightBase = -100;
 
 	float eyeDistance = 20.0;
 	float eyeX;

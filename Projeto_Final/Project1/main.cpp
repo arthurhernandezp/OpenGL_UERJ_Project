@@ -8,7 +8,6 @@ void GerenciaMouse(int button, int state, int x, int y);
 void GerenciaTeclado(unsigned char key, int x, int y);
 void GerenciaSetas(int key, int x, int y);
 
-
 // Programa Principal
 int main(int argc, char** argv)
 {
@@ -24,7 +23,6 @@ int main(int argc, char** argv)
 	robo.roboInicializa();
 	glutMainLoop();
 }
-
 
 void Desenha(void)
 {

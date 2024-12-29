@@ -156,14 +156,10 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 
 void Garra::garraDrawScene(void)
 {
-	//glEnable(GL_TEXTURE_2D);
-
-	//glMatrixMode(GL_MODELVIEW);
-	//glLoadIdentity();
-
 	eyeX = eyeDistance * cos(viewAngleZ * PI / 180) * cos(viewAngleX * PI / 180);
 	eyeY = eyeDistance * cos(viewAngleZ * PI / 180) * sin(viewAngleX * PI / 180);
 	eyeZ = eyeDistance * sin(viewAngleZ * PI / 180);
+
 	if (viewAngleZ < 90)
 		gluLookAt(eyeX, eyeY, eyeZ, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0);
 	else
@@ -244,5 +240,11 @@ void Garra::garraDrawScene(void)
 	glPopMatrix();
 
 }
+
+
+
+
+
+
 
 
