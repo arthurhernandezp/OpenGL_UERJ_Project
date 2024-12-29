@@ -133,11 +133,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cabeca.cpp" />
     <ClCompile Include="Garra.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RgbImage.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cabeca.h" />
     <ClInclude Include="Garra.h" />
     <ClInclude Include="RgbImage.h" />
   </ItemGroup>

@@ -24,7 +24,7 @@ public:
 	void garraDrawScene(void);
 
 private:
-	const char* filenameTexMetal1 = "./resource/metalTexture1.bmp";
+	const char* filenameTexMetal1 = "../resource/metalTexture1.bmp";
 
 	GLuint _textureIdMetal1;
 	GLuint _textureIdSphere;

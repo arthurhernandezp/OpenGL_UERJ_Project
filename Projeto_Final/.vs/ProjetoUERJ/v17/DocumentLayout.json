@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\",
+  "WorkspaceRootPath": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Garra.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Cabeca.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\RgbImage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\RgbImage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Cabeca.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\RgbImage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\RgbImage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Garra.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Garra.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -30,68 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Garra.cpp",
+              "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.cpp",
+              "RelativeDocumentMoniker": "Project1\\Garra.cpp",
+              "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.cpp",
+              "RelativeToolTip": "Project1\\Garra.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-28T19:55:31.189Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Garra.h",
-              "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.h",
+              "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.h",
               "RelativeDocumentMoniker": "Project1\\Garra.h",
-              "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.h",
+              "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.h",
               "RelativeToolTip": "Project1\\Garra.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-28T10:34:27.978Z"
+              "WhenOpened": "2024-12-28T19:44:33.001Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Garra.cpp",
-              "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.cpp",
-              "RelativeDocumentMoniker": "Project1\\Garra.cpp",
-              "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.cpp",
-              "RelativeToolTip": "Project1\\Garra.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJoAAAABAAAAAAAAAA==",
+              "Title": "Cabeca.cpp",
+              "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.cpp",
+              "RelativeDocumentMoniker": "Project1\\Cabeca.cpp",
+              "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.cpp",
+              "RelativeToolTip": "Project1\\Cabeca.cpp",
+              "ViewState": "AgIAAKcBAAAAAAAAAAAAALwBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-28T10:36:14.834Z",
+              "WhenOpened": "2024-12-28T19:36:01.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RgbImage.cpp",
-              "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\RgbImage.cpp",
-              "RelativeDocumentMoniker": "Project1\\RgbImage.cpp",
-              "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\RgbImage.cpp",
-              "RelativeToolTip": "Project1\\RgbImage.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-28T10:23:31.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RgbImage.h",
-              "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\RgbImage.h",
-              "RelativeDocumentMoniker": "Project1\\RgbImage.h",
-              "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\RgbImage.h",
-              "RelativeToolTip": "Project1\\RgbImage.h",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
+              "Title": "Cabeca.h",
+              "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.h",
+              "RelativeDocumentMoniker": "Project1\\Cabeca.h",
+              "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.h",
+              "RelativeToolTip": "Project1\\Cabeca.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-28T10:22:50.716Z"
+              "WhenOpened": "2024-12-28T19:35:53.486Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\main.cpp",
               "RelativeDocumentMoniker": "Project1\\main.cpp",
-              "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\main.cpp",
+              "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\teste_git_clone\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\main.cpp",
               "RelativeToolTip": "Project1\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-27T21:08:21.177Z"
+              "WhenOpened": "2024-12-28T19:34:54.289Z",
+              "EditorCaption": ""
             }
           ]
         }
