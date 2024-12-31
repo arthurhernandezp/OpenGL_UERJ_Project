@@ -251,9 +251,9 @@ void Cabeca::cabecaDrawScene(void)
 	// Desenha esfera no fundo/background
 	if (fundo) {
 		glPushMatrix();
-		glTranslatef(10.0, 0, -80.0f);
-		glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
-		glutSolidSphere(30.0f, 72, 72);
+			glTranslatef(10.0, 0, -80.0f);
+			glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
+			glutSolidSphere(30.0f, 72, 72);
 		glPopMatrix();
 	}
 

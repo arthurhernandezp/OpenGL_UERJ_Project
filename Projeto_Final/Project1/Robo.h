@@ -18,6 +18,8 @@ public:
 
 private:
 	std::unique_ptr<Cabeca> cabeca = nullptr;
-	std::unique_ptr<Garra> garra = nullptr;
+
+	std::unique_ptr<Garra> garraEsquerda = nullptr;
+	std::unique_ptr<Garra> garraDireita = nullptr;
 };
 

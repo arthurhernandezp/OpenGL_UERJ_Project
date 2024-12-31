@@ -198,48 +198,65 @@ void Garra::garraDrawScene(void)
 
 	glPushMatrix();
 
-	//draws top part of clamp
-	glRotatef(angleClampY + 60, 0.0f, 1.0f, 0.0f);
+		//draws top part of clamp
+		glRotatef(angleClampY + 60, 0.0f, 1.0f, 0.0f);
 
-	drawCylinder(diameterCylinder / 3, sizeClampPart);
-	glTranslatef(0.0f, 0.0f, sizeClampPart + diameterSphere / 15);
-	drawSphere(diameterSphere / 3);
+		drawCylinder(diameterCylinder / 3, sizeClampPart);
+		glTranslatef(0.0f, 0.0f, sizeClampPart + diameterSphere / 15);
+		drawSphere(diameterSphere / 3);
 
-	glTranslatef(0.0f, 0.0f, diameterSphere / 15);
-	glRotatef(-60, 0.0f, 1.0f, 0.0f);
+		glTranslatef(0.0f, 0.0f, diameterSphere / 15);
+		glRotatef(-60, 0.0f, 1.0f, 0.0f);
 
-	drawCylinder(diameterCylinder / 3, sizeClampPart);
-	glTranslatef(0.0f, 0.0f, sizeClampPart + diameterSphere / 15);
-	drawSphere(diameterSphere / 3);
+		drawCylinder(diameterCylinder / 3, sizeClampPart);
+		glTranslatef(0.0f, 0.0f, sizeClampPart + diameterSphere / 15);
+		drawSphere(diameterSphere / 3);
 
-	glTranslatef(0.0f, 0.0f, diameterSphere / 15);
-	glRotatef(-60, 0.0f, 1.0f, 0.0f);
-	drawCone(diameterCylinder / 3, sizeClampPart);
+		glTranslatef(0.0f, 0.0f, diameterSphere / 15);
+		glRotatef(-60, 0.0f, 1.0f, 0.0f);
+		drawCone(diameterCylinder / 3, sizeClampPart);
 
 	glPopMatrix();
 	glPushMatrix();
 
-	//draws bottom part of clamp
-	glRotatef(-angleClampY - 60, 0.0f, 1.0f, 0.0f);
+		//draws bottom part of clamp
+		glRotatef(-angleClampY - 60, 0.0f, 1.0f, 0.0f);
 
-	drawCylinder(diameterCylinder / 3, sizeClampPart);
-	glTranslatef(0.0f, 0.0f, sizeClampPart + diameterSphere / 15);
-	drawSphere(diameterSphere / 3);
+		drawCylinder(diameterCylinder / 3, sizeClampPart);
+		glTranslatef(0.0f, 0.0f, sizeClampPart + diameterSphere / 15);
+		drawSphere(diameterSphere / 3);
 
-	glTranslatef(0.0f, 0.0f, diameterSphere / 15);
-	glRotatef(60, 0.0f, 1.0f, 0.0f);
+		glTranslatef(0.0f, 0.0f, diameterSphere / 15);
+		glRotatef(60, 0.0f, 1.0f, 0.0f);
 
-	drawCylinder(diameterCylinder / 3, sizeClampPart);
-	glTranslatef(0.0f, 0.0f, sizeClampPart + diameterSphere / 15);
-	drawSphere(diameterSphere / 3);
+		drawCylinder(diameterCylinder / 3, sizeClampPart);
+		glTranslatef(0.0f, 0.0f, sizeClampPart + diameterSphere / 15);
+		drawSphere(diameterSphere / 3);
 
-	glTranslatef(0.0f, 0.0f, diameterSphere / 15);
-	glRotatef(60, 0.0f, 1.0f, 0.0f);
-	drawCone(diameterCylinder / 3, sizeClampPart);
+		glTranslatef(0.0f, 0.0f, diameterSphere / 15);
+		glRotatef(60, 0.0f, 1.0f, 0.0f);
+		drawCone(diameterCylinder / 3, sizeClampPart);
 
 	glPopMatrix();
-
 }
+
+void Garra::setPosition(float x, float y, float z)
+{
+	positionX = x;
+	positionY = y;
+	positionZ = z;
+}
+
+void Garra::setOrientation(float angleY)
+{
+	orientationZ = angleY;
+}
+
+void Garra::setTextureOn(bool condition)
+{
+	textureOn = condition;
+}
+
 
 
 

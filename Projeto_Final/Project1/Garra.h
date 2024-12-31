@@ -12,7 +12,7 @@ class Garra
 {
 public:
 	Garra() = default;
-
+	
 	void initRendering(void);
 	GLuint loadTexture(const char* filename);
 	void drawSphere(float diameter);
@@ -22,6 +22,10 @@ public:
 
 	void garraHandleKeypress(unsigned char key, int x, int y);
 	void garraDrawScene(void);
+
+	void setPosition(float x, float y, float z);
+	void setOrientation(float angleY);
+	void setTextureOn(bool);
 
 private:
 	const char* filenameTexMetal1 = "../resource/metalTexture1.bmp";
@@ -51,7 +55,7 @@ private:
 	float sizeForearm = 30.0;
 	float sizeHand = 20.0;
 	float sizeClampPart = 10.0;
-	float diameterBase = 20.0;
+	float diameterBase = 30.0;
 	float heightBase = -100;
 
 	float eyeDistance = 20.0;
@@ -59,11 +63,20 @@ private:
 	float eyeY;
 	float eyeZ;
 	float viewAngleX = 0.0;
-	float viewAngleZ = 15.0;
+	float viewAngleZ = -180.0;
 
 	float angleArm = 90.0;
 	float angleForearm = 90.0;
 	float angleHand = 0.0;
 	float angleClampZ = 0.0;
 	float angleClampY = 0.0;
+
+
+	// Variaveis para posicionar na janela
+	float positionX = 0.0f;
+	float positionY = 0.0f;
+	float positionZ = 0.0f;
+	float orientationZ = 0.0f; 
+
+
 };
