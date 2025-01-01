@@ -78,5 +78,4 @@ private:
 	float positionZ = 0.0f;
 	float orientationZ = 0.0f; 
 
-
 };

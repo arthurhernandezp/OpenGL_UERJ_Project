@@ -1,6 +1,8 @@
 #pragma once
 #include "Garra.h"
 #include "Cabeca.h"
+#include "Corpo.h"
+#include "Perna.h"
 #include "memory";	//Gilson essa biblioteca e nativa do C++ para usar ponteiros inteligentes
 
 class Robo
@@ -18,8 +20,9 @@ public:
 
 private:
 	std::unique_ptr<Cabeca> cabeca = nullptr;
-
+	std::unique_ptr<Corpo> corpo = nullptr;
 	std::unique_ptr<Garra> garraEsquerda = nullptr;
 	std::unique_ptr<Garra> garraDireita = nullptr;
+	std::unique_ptr<Perna> perna = nullptr;
 };
 

@@ -134,14 +134,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Cabeca.cpp" />
+    <ClCompile Include="Corpo.cpp" />
     <ClCompile Include="Garra.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Perna.cpp" />
     <ClCompile Include="RgbImage.cpp" />
     <ClCompile Include="Robo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cabeca.h" />
+    <ClInclude Include="Corpo.h" />
     <ClInclude Include="Garra.h" />
+    <ClInclude Include="Perna.h" />
     <ClInclude Include="RgbImage.h" />
     <ClInclude Include="Robo.h" />
   </ItemGroup>

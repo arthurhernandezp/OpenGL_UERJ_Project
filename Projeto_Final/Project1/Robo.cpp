@@ -9,16 +9,26 @@ Robo::Robo()
 	garraDireita = std::make_unique<Garra>();
 	garraDireita->setPosition(10.0f, 0.0f, 0.0f);    // Lado direito
 	garraDireita->setOrientation(0.0f);              // Normal
-	garraDireita->setTextureOn(false);
+
 	cabeca = std::make_unique<Cabeca>();
+
+	corpo = std::make_unique<Corpo>();
+
+	perna = std::make_unique<Perna>();
 }
 
 void Robo::roboInicializa()
 {
 	garraEsquerda->initRendering();
+
 	garraDireita->initRendering();
+
 	cabeca->InicializaLuz();
 	cabeca->InicializaRendering();
+
+	corpo->initRendering();
+
+	perna->initRendering();
 }
 
 void Robo::roboHandleKeypress(unsigned char key, int x, int y)
@@ -26,6 +36,8 @@ void Robo::roboHandleKeypress(unsigned char key, int x, int y)
 	cabeca->cabecaHandleKeypress(key, x, y);
 	garraEsquerda->garraHandleKeypress(key, x, y);
 	garraDireita->garraHandleKeypress(key, x, y);
+	corpo->corpoHandleKeypress(key, x, y);
+	perna->pernaHandleKeypress(key, x, y);
 }
 
 void Robo::roboHandleArrowpress(int key, int x, int y)
@@ -41,6 +53,7 @@ void Robo::roboHandleMouseEvent(int button, int state, int x, int y)
 void Robo::roboDrawScene(void)
 {
 	cabeca->cabecaDrawScene();
+
 	// Configurações para a garra esquerda
 	glPushMatrix();
 		glTranslatef(-150.0f, -100.0f, 0.0f);  // Posiciona no lado esquerdo
@@ -59,7 +72,9 @@ void Robo::roboDrawScene(void)
 		garraDireita->garraDrawScene();  // Desenha a garra
 	glPopMatrix();
 
+	corpo->corpoDrawScene();
 
+	perna->pernaDrawScene();
 }
 
 void Robo::roboAlteraJanela(GLsizei w, GLsizei h)
