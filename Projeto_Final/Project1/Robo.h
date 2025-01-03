@@ -3,13 +3,13 @@
 #include "Cabeca.h"
 #include "Corpo.h"
 #include "Perna.h"
-#include "memory";	//Gilson essa biblioteca e nativa do C++ para usar ponteiros inteligentes
 
 class Robo
 {
 public:
 
 	Robo();
+	~Robo();
 
 	void roboInicializa();
 	void roboHandleKeypress(unsigned char key, int x, int y);
@@ -19,10 +19,10 @@ public:
 	void roboAlteraJanela(GLsizei w, GLsizei h);
 
 private:
-	std::unique_ptr<Cabeca> cabeca = nullptr;
-	std::unique_ptr<Corpo> corpo = nullptr;
-	std::unique_ptr<Garra> garraEsquerda = nullptr;
-	std::unique_ptr<Garra> garraDireita = nullptr;
-	std::unique_ptr<Perna> perna = nullptr;
+	Cabeca * cabeca = nullptr;
+	Corpo * corpo = nullptr;
+	Garra * garraEsquerda = nullptr;
+	Garra * garraDireita = nullptr;
+	Perna * perna = nullptr;
 };
 

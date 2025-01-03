@@ -2,19 +2,28 @@
 
 Robo::Robo()
 {
-	garraEsquerda = std::make_unique<Garra>();
+	garraEsquerda = new Garra();
 	garraEsquerda->setPosition(-10.0f, 0.0f, 0.0f);  // Lado esquerdo
 	garraEsquerda->setOrientation(180.0f);           // Invertida
 
-	garraDireita = std::make_unique<Garra>();
+	garraDireita = new Garra();
 	garraDireita->setPosition(10.0f, 0.0f, 0.0f);    // Lado direito
 	garraDireita->setOrientation(0.0f);              // Normal
 
-	cabeca = std::make_unique<Cabeca>();
+	cabeca = new Cabeca();
 
-	corpo = std::make_unique<Corpo>();
+	corpo = new Corpo();
 
-	perna = std::make_unique<Perna>();
+	perna = new Perna();
+}
+
+Robo::~Robo()
+{
+	delete garraEsquerda;
+	delete garraDireita;
+	delete cabeca;
+	delete corpo;
+	delete perna;
 }
 
 void Robo::roboInicializa()
