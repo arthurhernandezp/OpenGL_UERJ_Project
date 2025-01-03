@@ -14,6 +14,9 @@ public:
 	void initRendering(void);
 	GLuint loadTexture(const char* filename);
 
+	void desenhaOmbro();
+	void desenhaTronco();
+
 	void corpoHandleKeypress(unsigned char key, int x, int y);
 	void corpoDrawScene(void);
 

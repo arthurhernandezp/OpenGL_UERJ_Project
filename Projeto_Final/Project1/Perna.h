@@ -18,5 +18,6 @@ public:
 	void pernaDrawScene(void);
 
 private:
-
+	const char* filenameRusted = "../resource/texture_rusted_metal.bmp"; //image file with texture
+	GLuint _textureIdRusted; //The id of texture
 };
