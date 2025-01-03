@@ -18,6 +18,14 @@ public:
 	void corpoDrawScene(void);
 
 private:
+	const char* filenameRugged = "../resource/texture_rugged_metal.bmp"; //image file with texture
+	const char* filenameRusted = "../resource/texture_rusted_metal.bmp"; //image file with texture
+
+	GLUquadric* quadRugged = nullptr;
+	GLUquadric* quadRusted = nullptr;
+
+	GLuint _textureIdRusted; //The id of texture
+	GLuint _textureIdRugged; //The id of texture
 
 };
 
