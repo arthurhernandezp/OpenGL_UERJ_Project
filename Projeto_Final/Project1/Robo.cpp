@@ -65,7 +65,7 @@ void Robo::roboDrawScene(void)
 
 	// Configurações para a garra esquerda
 	glPushMatrix();
-		glTranslatef(-150.0f, -100.0f, 0.0f);  // Posiciona no lado esquerdo
+		glTranslatef(-145.0f, -100.0f, 0.0f);  // Posiciona no lado esquerdo
 		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);  // Rotaciona para apontar para fora
 		glRotatef(90.0f, 0.0f, 0.0f, 1.0f);  // Rotaciona para apontar para fora
 		glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);  // Rotaciona para apontar para fora

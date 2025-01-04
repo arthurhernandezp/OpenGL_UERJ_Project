@@ -33,40 +33,44 @@ void Perna::pernaHandleKeypress(unsigned char key, int x, int y)
 void Perna::pernaDrawScene(void)
 {
 	//Base pes 0
-	glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+	glColor4f(1.0f, 0.0f, 0.0f, 0.5f);
 
 	glPushMatrix();
-		glTranslatef(0.0f, -135.0f, 0.0f); // para chegar na base inf do amarelo 115
+		glTranslatef(0.0f, -115.0f, 0.0f); // para chegar na base inf do amarelo 115
 		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
 
-		glScalef(0.1f, 0.1f, 1.0f);  // achatando
+		glScalef(1.0f, 0.2f, 1.0f);  // achatando
 		glutSolidSphere(50.0f, 42, 42);
 	glPopMatrix();
+
+	glColor4f(0.0f, 1.0f, 0.0f, 0.5f);
 
 	//Base pes 1
 	glPushMatrix();
-		glTranslatef(0.0f, -140.0f, 0.0f);
+		glTranslatef(0.0f, -125.0f, 0.0f);
 		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
 
 		//glBindTexture(GL_TEXTURE_2D, _textureIdRugged);
 		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 
-		glScalef(0.1f, 0.1f, 1.0f);  // achatando
+		glScalef(1.0f, 0.2f, 1.0f);  // achatando
 		glutSolidSphere(50.0f, 42, 42);
 	glPopMatrix();
 
+	glColor4f(0.0f, 0.0f, 1.0f, 0.5f);
 	//Base pes 2	
 	glPushMatrix();
-		glTranslatef(0.0f, -145.0f, 0.0f);
+		glTranslatef(0.0f, -135.0f, 0.0f);
 		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
 
 		//glBindTexture(GL_TEXTURE_2D, _textureIdRugged);
 		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 
-		glScalef(0.1f, 0.1f, 1.0f);  // achatando
+		glScalef(1.0f, 0.2f, 1.0f);  // achatando
 		glutSolidSphere(50.0f, 42, 42);
 	glPopMatrix();
 
+	glColor4f(1.0f, 0.0f, 1.0f, 0.5f);
 
 	glPushMatrix();
 		glTranslatef(0.0f, -155.0f, -30.0f);  // Cubo
@@ -78,6 +82,5 @@ void Perna::pernaDrawScene(void)
 
 		glScalef(1.0f, 0.2f, 0.5f);
 		glutSolidCube(90.0f);
-
 	glPopMatrix();
 }

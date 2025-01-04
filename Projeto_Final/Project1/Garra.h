@@ -49,13 +49,13 @@ private:
 
 	// Novas dimensoes = antigaDimensoes * 10
 
-	float diameterCylinder = 3;
-	float diameterSphere = 4;
+	float diameterCylinder = 9;
+	float diameterSphere = 10;
 	float sizeArm = 40.5;
-	float sizeForearm = 30.0;
-	float sizeHand = 20.0;
-	float sizeClampPart = 10.0;
-	float diameterBase = 30.0;
+	float sizeForearm = 40.0;
+	float sizeHand = 25.0;
+	float sizeClampPart = 20.0;
+	float diameterBase = 0.0;
 	float heightBase = -100;
 
 	float eyeDistance = 20.0;
