@@ -105,8 +105,12 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 	{
 		case 27: //Escape key
 			exit(0);
-		case 'w': //Increase view angle z axis
-			if (viewAngleZ < 180) viewAngleZ += 3;
+		case 'w': //Aumenta o tamanho do braco
+			sizeArm += 4;
+			glutPostRedisplay();
+			break;
+		case 's': //Diminua o tamanho do braco
+			if (sizeArm > 8.5) sizeArm -= 4;
 			glutPostRedisplay();
 			break;
 		case 'z': //Decrease view angle z axis
@@ -115,10 +119,6 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			break;
 		case 'a': //Decrease view angle x axis
 			if (viewAngleX > 0) viewAngleX -= 3;
-			glutPostRedisplay();
-			break;
-		case 's': //Increase view angle x axis
-			if (viewAngleX < 180) viewAngleX += 3;
 			glutPostRedisplay();
 			break;
 		case 't': //Use texture or not
@@ -168,6 +168,8 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			glutPostRedisplay();
 			break;
 	}
+	//std::cout << "Tipo braco: " << ((tipoBraco == 0) ? "Braco Esquerdo" : "Braco Direito")
+	//		<< ", sizeArm : " << sizeArm << '\n';
 }
 
 void Garra::garraDrawScene(void)
