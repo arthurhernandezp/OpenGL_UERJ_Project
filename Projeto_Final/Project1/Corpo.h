@@ -21,6 +21,9 @@ public:
 	void corpoDrawScene(void);
 
 private:
+
+	float angleCorpo{0.0f};
+
 	const char* filenameRugged = "../resource/texture_rugged_metal.bmp"; //image file with texture
 	const char* filenameRusted = "../resource/texture_rusted_metal.bmp"; //image file with texture
 

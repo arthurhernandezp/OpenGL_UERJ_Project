@@ -46,17 +46,6 @@ private:
 
 	bool textureOn = true;
 
-	//float diameterCylinder = 0.3;
-	//float diameterSphere = 0.4;
-	//float sizeArm = 4.5;
-	//float sizeForearm = 3.0;
-	//float sizeHand = 2.0;
-	//float sizeClampPart = 1.0;
-	//float diameterBase = 2.0;
-	//float heightBase = 0.5;
-
-	// Novas dimensoes = antigaDimensoes * 10
-
 	float diameterCylinder = 9;
 	float diameterSphere = 10;
 	float sizeArm = 40.5;
@@ -79,8 +68,6 @@ private:
 	float angleClampZ = 0.0;
 	float angleClampY = 0.0;
 
-
-	// Variaveis para posicionar na janela
 	float positionX = 0.0f;
 	float positionY = 0.0f;
 	float positionZ = 0.0f;

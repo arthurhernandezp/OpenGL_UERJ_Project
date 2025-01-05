@@ -3,13 +3,14 @@
 Robo::Robo()
 {
 	garraEsquerda = new Garra();
-	garraEsquerda->setPosition(-10.0f, 0.0f, 0.0f);  // Lado esquerdo
-	garraEsquerda->setOrientation(180.0f);           // Invertida
+	garraEsquerda->setPosition(-10.0f, 0.0f, 0.0f);  
+	garraEsquerda->setOrientation(180.0f);           
 
 	garraDireita = new Garra();
-	garraDireita->setPosition(10.0f, 0.0f, 0.0f);    // Lado direito
-	garraDireita->setOrientation(0.0f);              // Normal
+	garraDireita->setPosition(10.0f, 0.0f, 0.0f);    
+	garraDireita->setOrientation(0.0f);              
 	garraDireita->tipoBraco = Garra::BRACO_DIREITO;
+
 	cabeca = new Cabeca();
 
 	corpo = new Corpo();
@@ -63,22 +64,20 @@ void Robo::roboDrawScene(void)
 {
 	cabeca->cabecaDrawScene();
 
-	// Configurações para a garra esquerda
 	glPushMatrix();
-		glTranslatef(-145.0f, -100.0f, 0.0f);  // Posiciona no lado esquerdo
-		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);  // Rotaciona para apontar para fora
-		glRotatef(90.0f, 0.0f, 0.0f, 1.0f);  // Rotaciona para apontar para fora
-		glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);  // Rotaciona para apontar para fora
-		garraEsquerda->garraDrawScene();  // Desenha a garra
+		glTranslatef(-145.0f, -100.0f, 0.0f); 
+		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);  
+		glRotatef(90.0f, 0.0f, 0.0f, 1.0f); 
+		glRotatef(-90.0f, 1.0f, 0.0f, 0.0f); 
+		garraEsquerda->garraDrawScene();  
 	glPopMatrix();
 
-	// Configurações para a garra direita
 	glPushMatrix();
-		glTranslatef(150.0f, -100.0f, 0.0f);  // Posiciona no lado direito
-		glRotatef(-100.0f, 0.0f, 1.0f, 0.0f); // Rotaciona para apontar para fora
-		glRotatef(90.0f, 0.0f, 0.0f, 1.0f);  // Rotaciona para apontar para fora
-		glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);  // Rotaciona para apontar para fora
-		garraDireita->garraDrawScene();  // Desenha a garra
+		glTranslatef(150.0f, -100.0f, 0.0f);  
+		glRotatef(-100.0f, 0.0f, 1.0f, 0.0f);
+		glRotatef(90.0f, 0.0f, 0.0f, 1.0f); 
+		glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);  
+		garraDireita->garraDrawScene(); 
 	glPopMatrix();
 
 	corpo->corpoDrawScene();

@@ -49,10 +49,6 @@ void Perna::pernaDrawScene(void)
 	glPushMatrix();
 		glTranslatef(0.0f, -125.0f, 0.0f);
 		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
-
-		//glBindTexture(GL_TEXTURE_2D, _textureIdRugged);
-		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-
 		glScalef(1.0f, 0.2f, 1.0f);  // achatando
 		glutSolidSphere(50.0f, 42, 42);
 	glPopMatrix();
@@ -62,10 +58,6 @@ void Perna::pernaDrawScene(void)
 	glPushMatrix();
 		glTranslatef(0.0f, -135.0f, 0.0f);
 		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
-
-		//glBindTexture(GL_TEXTURE_2D, _textureIdRugged);
-		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-
 		glScalef(1.0f, 0.2f, 1.0f);  // achatando
 		glutSolidSphere(50.0f, 42, 42);
 	glPopMatrix();

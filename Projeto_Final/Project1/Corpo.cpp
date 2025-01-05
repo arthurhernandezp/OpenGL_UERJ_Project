@@ -35,11 +35,7 @@ void Corpo::desenhaOmbro()
 	glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
 	glPushMatrix();
 		glTranslatef(0.0f, -35.0f, 0.0f);
-		glRotatef(90.0f, 75.0f, 0.0f, 0.0f);
-
-		//glBindTexture(GL_TEXTURE_2D, _textureIdRugged);
-		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-
+		glRotatef(90.0f, 1.0f, 0.0f, 0.0f);
 		gluQuadricTexture(quadRugged, TRUE);
 		gluCylinder(quadRugged, 30.0f, 50.0f, 10.0f, 32, 32);
 	glPopMatrix();
@@ -49,10 +45,6 @@ void Corpo::desenhaOmbro()
 	glPushMatrix();
 		glTranslatef(0.0f, -45.0f, 0.0f);
 		glRotatef(90.0f, 1.0f, 0.0f, 0.0f);
-
-		//glBindTexture(GL_TEXTURE_2D, _textureIdRugged);
-		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-
 		gluQuadricTexture(quadRugged, TRUE);
 		gluCylinder(quadRugged, 50.0f, 30.0f, 10.0f, 32, 32);
 	glPopMatrix();
@@ -64,9 +56,8 @@ void Corpo::desenhaTronco()
 	glColor4f(1.0f, 1.0f, 0.0f, 1.0f);
 
 	glPushMatrix();
-		glTranslatef(0.0f, -55.0f, 0.0f);
-		glRotatef(90.0f, 1.0f, 0.0f, 0.0f); // 10f do inf + 45 translacao
-
+		glTranslatef(0.0f, -55.0f, 0.0f);	
+		glRotatef(90.0f, 1.0f, 0.0f, 0.0f); 
 		gluCylinder(quadRugged, 50.0f, 50.0f, 60.0f, 72, 72);
 	glPopMatrix();
 
@@ -74,11 +65,21 @@ void Corpo::desenhaTronco()
 
 void Corpo::corpoHandleKeypress(unsigned char key, int x, int y)
 {
+	switch (key)
+	{
+	case '1':
+		angleCorpo += 3;
+		if (angleCorpo >= 360) angleCorpo = 0;
+		break;
+	}
 
 }
 
 void Corpo::corpoDrawScene(void)
 {
-	desenhaOmbro();
-	desenhaTronco();
+	glPushMatrix();
+		glRotatef(angleCorpo, 0.0f, 1.0f, 0.0f);
+		desenhaOmbro();
+		desenhaTronco();
+	glPopMatrix();
 }
