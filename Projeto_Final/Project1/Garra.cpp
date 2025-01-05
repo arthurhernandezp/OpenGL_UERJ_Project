@@ -126,13 +126,29 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			glutPostRedisplay();
 			break;
 		case '1': //Increase arm angle
-			angleArm += 3;
-			if (angleArm >= 360) angleArm = 0;
+			if(tipoBraco == Garra::BRACO_ESQUERDO)
+			{
+				angleArm += 3;
+				if (angleArm >= 360) angleArm = 0;
+			}
+			else if (tipoBraco == Garra::BRACO_DIREITO)
+			{
+				angleArm -= 3;
+				if (angleArm <= 0) angleArm = 360;
+			}
 			glutPostRedisplay();
 			break;
 		case '2': //Decrease arm angle
-			angleArm -= 3;
-			if (angleArm <= 0) angleArm = 360;
+			if (tipoBraco == Garra::BRACO_ESQUERDO)
+			{
+				angleArm -= 3;
+				if (angleArm <= 0) angleArm = 360;
+			}
+			else if (tipoBraco == Garra::BRACO_DIREITO)
+			{
+				angleArm += 3;
+				if (angleArm >= 360) angleArm = 0;
+			}
 			glutPostRedisplay();
 			break;
 		case '3': //Increase forearm angle

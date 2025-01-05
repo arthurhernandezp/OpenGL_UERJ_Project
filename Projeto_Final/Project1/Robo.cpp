@@ -9,7 +9,7 @@ Robo::Robo()
 	garraDireita = new Garra();
 	garraDireita->setPosition(10.0f, 0.0f, 0.0f);    // Lado direito
 	garraDireita->setOrientation(0.0f);              // Normal
-
+	garraDireita->tipoBraco = Garra::BRACO_DIREITO;
 	cabeca = new Cabeca();
 
 	corpo = new Corpo();

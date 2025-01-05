@@ -27,6 +27,14 @@ public:
 	void setOrientation(float angleY);
 	void setTextureOn(bool);
 
+	enum
+	{
+		BRACO_ESQUERDO,
+		BRACO_DIREITO
+	};
+
+	int tipoBraco = BRACO_ESQUERDO;
+
 private:
 	const char* filenameTexMetal1 = "../resource/metalTexture1.bmp";
 
