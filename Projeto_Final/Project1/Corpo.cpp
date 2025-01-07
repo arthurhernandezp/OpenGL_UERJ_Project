@@ -67,9 +67,10 @@ void Corpo::corpoHandleKeypress(unsigned char key, int x, int y)
 {
 	switch (key)
 	{
-	case '1':
+	case 'z':
 		angleCorpo += 3;
 		if (angleCorpo >= 360) angleCorpo = 0;
+		glutPostRedisplay();
 		break;
 	}
 

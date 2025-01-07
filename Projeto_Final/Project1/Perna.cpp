@@ -32,11 +32,11 @@ void Perna::pernaHandleKeypress(unsigned char key, int x, int y)
 
 void Perna::pernaDrawScene(void)
 {
-	//Base pes 0
+	  //Base pes 0
 	glColor4f(1.0f, 0.0f, 0.0f, 0.5f);
 
 	glPushMatrix();
-		glTranslatef(0.0f, -115.0f, 0.0f); // para chegar na base inf do amarelo 115
+		glTranslatef(0.0f, -120.0f, 0.0f); // para chegar na base inf do amarelo 115
 		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
 
 		glScalef(1.0f, 0.2f, 1.0f);  // achatando
@@ -47,16 +47,16 @@ void Perna::pernaDrawScene(void)
 
 	//Base pes 1
 	glPushMatrix();
-		glTranslatef(0.0f, -125.0f, 0.0f);
+		glTranslatef(0.0f, -130.0f, 0.0f);
 		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
 		glScalef(1.0f, 0.2f, 1.0f);  // achatando
 		glutSolidSphere(50.0f, 42, 42);
 	glPopMatrix();
 
 	glColor4f(0.0f, 0.0f, 1.0f, 0.5f);
-	//Base pes 2	
+	//Base pes 2    
 	glPushMatrix();
-		glTranslatef(0.0f, -135.0f, 0.0f);
+		glTranslatef(0.0f, -140.0f, 0.0f);
 		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
 		glScalef(1.0f, 0.2f, 1.0f);  // achatando
 		glutSolidSphere(50.0f, 42, 42);
@@ -64,15 +64,29 @@ void Perna::pernaDrawScene(void)
 
 	glColor4f(1.0f, 0.0f, 1.0f, 0.5f);
 
-	glPushMatrix();
-		glTranslatef(0.0f, -155.0f, -30.0f);  // Cubo
-
+	glPushMatrix(); //Retangulo esquerdo
+		glTranslatef(-22.0f, -155.0f, 0.0f);  // Cubo
 		glEnable(GL_TEXTURE_2D);
 		glBindTexture(GL_TEXTURE_2D, _textureIdRusted);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+		glScalef(0.5f, 0.2f, 1.0f);
+		glutSolidCube(80.0f);
+	glPopMatrix();
 
-		glScalef(1.0f, 0.2f, 0.5f);
-		glutSolidCube(90.0f);
+	glPushMatrix(); //Retangulo direito
+		glTranslatef(22.0f, -155.0f, 0.0f);  // Cubo
+		glEnable(GL_TEXTURE_2D);
+		glBindTexture(GL_TEXTURE_2D, _textureIdRusted);
+		glScalef(0.5f, 0.2f, 1.0f);
+		glutSolidCube(80.0f);
+	glPopMatrix();
+
+	//Pes
+
+	glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+
+	glPushMatrix(); //Pe esquerdo
+		glTranslatef(-22.0f, -170.0f, 0.0f);
+		glScalef(0.5f, 0.2f, 1.0f);
+		glutSolidCube(50.0f);
 	glPopMatrix();
 }

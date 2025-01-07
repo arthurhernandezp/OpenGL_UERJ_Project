@@ -113,10 +113,6 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			if (sizeArm > 8.5) sizeArm -= 4;
 			glutPostRedisplay();
 			break;
-		case 'z': //Decrease view angle z axis
-			if (viewAngleZ > 0) viewAngleZ -= 3;
-			glutPostRedisplay();
-			break;
 		case 'a': //Decrease view angle x axis
 			if (viewAngleX > 0) viewAngleX -= 3;
 			glutPostRedisplay();

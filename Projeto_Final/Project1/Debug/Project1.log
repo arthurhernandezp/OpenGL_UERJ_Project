@@ -8,7 +8,9 @@ C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.c
 C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(82,49): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
 C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(99,69): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
 C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(99,56): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
-C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(177,50): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
-C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(178,50): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
-C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(179,21): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(173,50): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(174,50): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(175,21): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+  Perna.cpp
+  Gerando Código...
   Project1.vcxproj -> C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Debug\ProjetoUERJ.exe
