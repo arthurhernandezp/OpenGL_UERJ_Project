@@ -16,6 +16,7 @@ public:
 
 	void desenhaOmbro();
 	void desenhaTronco();
+	void desenhaPainelControle();
 
 	void corpoHandleKeypress(unsigned char key, int x, int y);
 	void corpoDrawScene(void);

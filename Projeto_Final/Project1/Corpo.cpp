@@ -63,6 +63,62 @@ void Corpo::desenhaTronco()
 
 }
 
+void Corpo::desenhaPainelControle()
+{
+	//Botoes
+	glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+
+	glPushMatrix();
+		glTranslatef(-5.0f, -75.0f, 52.0f); //botao direito BRANCO
+		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
+		glScalef(0.2f, 1.0f, 1.0f);
+		glutSolidSphere(5.0f, 42, 42);
+	glPopMatrix();
+
+	glPushMatrix();
+		glTranslatef(8.0f, -75.0f, 52.0f); //botao direito BRANCO
+		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
+		glScalef(0.2f, 1.0f, 1.0f);
+		glutSolidSphere(5.0f, 42, 42);
+	glPopMatrix();
+
+	glColor4f(0.1f, 0.1f, 0.1f, 1.0f); //painel base
+	glPushMatrix();
+		glTranslatef(2.0f, -85.0f, 49.0f);  // Cubo
+		glScalef(1.0f, 1.0f, 0.1f);
+		glutSolidCube(35.0f);
+	glPopMatrix();
+
+
+	glColor4f(0.0f, 1.0f, 0.0f, 1.0f); //VERDE
+	glPushMatrix();
+		glTranslatef(-10.0f, -90.0f, 52.0f);  // Cubo
+		glScalef(1.0f, 1.0f, 0.1f);
+		glutSolidCube(7.0f);
+	glPopMatrix();
+
+	glColor4f(1.0f, 0.0f, 0.0f, 1.0f); //VERMELHO
+	glPushMatrix();
+		glTranslatef(-2.0f, -90.0f, 52.0f);  // Cubo
+		glScalef(1.0f, 1.0f, 0.1f);
+		glutSolidCube(7.0f);
+	glPopMatrix();
+
+	glColor4f(1.0f, 1.0f, 0.0f, 1.0f); //AMARELO
+	glPushMatrix();
+		glTranslatef(6.0f, -90.0f, 52.0f);  // Cubo
+		glScalef(1.0f, 1.0f, 0.1f);
+		glutSolidCube(7.0f);
+	glPopMatrix();
+
+	glColor4f(0.0f, 0.0f, 1.0f, 1.0f); //AZUL
+	glPushMatrix();
+		glTranslatef(14.0f, -90.0f, 52.0f);  // Cubo
+		glScalef(1.0f, 1.0f, 0.1f);
+		glutSolidCube(7.0f);
+	glPopMatrix();
+}
+
 void Corpo::corpoHandleKeypress(unsigned char key, int x, int y)
 {
 	switch (key)
@@ -82,5 +138,6 @@ void Corpo::corpoDrawScene(void)
 		glRotatef(angleCorpo, 0.0f, 1.0f, 0.0f);
 		desenhaOmbro();
 		desenhaTronco();
+		desenhaPainelControle();
 	glPopMatrix();
 }
