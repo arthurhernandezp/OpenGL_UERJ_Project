@@ -12,7 +12,7 @@ public:
 	GLuint LoadTexture(const char* filename);
 	void InicializaRendering();
 	void InicializaLuz(void);
-	void EspecificaParametrosVisualizacao(void);
+
 	void DesenhaCubo(GLuint _textureId, float lenghtX, float lenghtY, float height);
 	void DesenhaBastao(float diam_start, float diam_end, float lenght, float radius, int color);
 	void DesenhaParteCoroa(float base, float top, float length, float height);
@@ -24,10 +24,7 @@ public:
 	void desenhaVidroCabeca();
 
 	void cabecaHandleKeypress(unsigned char key, int x, int y);
-	void cabecaHandleArrowpress(int key, int x, int y);
-	void cabecaHandleMouseEvent(int button, int state, int x, int y);
 	void cabecaDrawScene(void);
-	void cabecaAlteraJanela(GLsizei w, GLsizei h);
 	float posicaoCabeca{ 0.0f };
 
 private:
@@ -43,7 +40,6 @@ private:
 	GLUquadric* quadRusted = nullptr;
 	GLUquadric* quadGolden = nullptr;
 	GLUquadric* quadGlass = nullptr;
-	GLfloat angle, fAspect, rot_x, rot_y;
 	float alturaCabeca{ 0.0f };
 
 	float angleCabeca{ 0.0f };

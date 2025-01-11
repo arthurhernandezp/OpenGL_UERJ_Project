@@ -1,6 +1,8 @@
 #include "Robo.h"
+#include "Camera.h"
 
 Robo robo;
+Camera camera(45, 0, 0);
 
 void Desenha(void);
 void AlteraTamanhoJanela(GLsizei w, GLsizei h);
@@ -28,8 +30,10 @@ void Desenha(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	//glLoadIdentity();
-
+	glPushMatrix();
+	camera.update();
 	robo.roboDrawScene();
+	glPopMatrix();
 	glutSwapBuffers();
 }
 
@@ -40,12 +44,14 @@ void AlteraTamanhoJanela(GLsizei w, GLsizei h)
 	// Especifica o tamanho da viewport
 	glViewport(0, 0, w, h);
 	// Calcula a correcao de aspecto
-	robo.roboAlteraJanela(w, h);
+	camera.cameraAlteraJanela(w, h);
 }
+
 void GerenciaMouse(int button, int state, int x, int y)
 {
-	robo.roboHandleMouseEvent(button, state, x, y);
+	camera.cameraHandleMouseEvent(button, state, x, y);
 }
+
 void GerenciaTeclado(unsigned char key, int x, int y)
 {
 	robo.roboHandleKeypress(key, x, y);
@@ -53,5 +59,5 @@ void GerenciaTeclado(unsigned char key, int x, int y)
 
 void GerenciaSetas(int key, int x, int y)
 {
-	robo.roboHandleArrowpress(key, x, y);
+	camera.cameraHandleArrowpress(key, x, y);
 }

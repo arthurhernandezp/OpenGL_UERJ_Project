@@ -73,16 +73,6 @@ void Robo::roboHandleKeypress(unsigned char key, int x, int y)
 
 }
 
-void Robo::roboHandleArrowpress(int key, int x, int y)
-{
-	cabeca->cabecaHandleArrowpress(key, x, y);
-}
-
-void Robo::roboHandleMouseEvent(int button, int state, int x, int y)
-{
-	cabeca->cabecaHandleMouseEvent(button, state, x, y);
-}
-
 void Robo::roboDrawScene(void)
 {
 	glTranslatef(0.0f, 0.0f, 0.0f + posicaoRobo);
@@ -113,9 +103,4 @@ void Robo::roboDrawScene(void)
 		glTranslatef(0.0f, 0.0f, 0.0f + posicaoRobo);
 		perna->pernaDrawScene();
 	glPopMatrix();
-}
-
-void Robo::roboAlteraJanela(GLsizei w, GLsizei h)
-{
-	cabeca->cabecaAlteraJanela(w, h);
 }

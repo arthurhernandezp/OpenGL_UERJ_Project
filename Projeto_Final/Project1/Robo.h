@@ -13,10 +13,7 @@ public:
 
 	void roboInicializa();
 	void roboHandleKeypress(unsigned char key, int x, int y);
-	void roboHandleArrowpress(int key, int x, int y);
-	void roboHandleMouseEvent(int button, int state, int x, int y);
 	void roboDrawScene(void);
-	void roboAlteraJanela(GLsizei w, GLsizei h);
 
 private:
 	float posicaoRobo	{ 0.0f };
