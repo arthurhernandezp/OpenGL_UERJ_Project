@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Cabeca.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Robo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Robo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Robo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Robo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Garra.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Garra.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Cabeca.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Cabeca.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Robo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Robo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -35,16 +43,8 @@
       "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Perna.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Garra.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Corpo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Corpo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{12209E59-A4CC-4868-891A-1DAD20F2BD84}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Garra.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,23 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Robo.cpp",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Robo.cpp",
               "RelativeDocumentMoniker": "Project1\\Robo.cpp",
               "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Robo.cpp",
               "RelativeToolTip": "Project1\\Robo.cpp",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAAC8AAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAD0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-05T13:18:07.798Z"
+              "WhenOpened": "2025-01-05T13:18:07.798Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Cabeca.h",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.h",
               "RelativeDocumentMoniker": "Project1\\Cabeca.h",
@@ -78,11 +79,12 @@
               "RelativeToolTip": "Project1\\Cabeca.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-11T17:43:06.328Z"
+              "WhenOpened": "2025-01-11T17:43:06.328Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Robo.h",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Robo.h",
               "RelativeDocumentMoniker": "Project1\\Robo.h",
@@ -94,20 +96,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Cabeca.cpp",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.cpp",
               "RelativeDocumentMoniker": "Project1\\Cabeca.cpp",
               "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Cabeca.cpp",
               "RelativeToolTip": "Project1\\Cabeca.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0BAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAAAAgBAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-11T17:29:18.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\main.cpp",
               "RelativeDocumentMoniker": "Project1\\main.cpp",
@@ -119,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Perna.h",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Perna.h",
               "RelativeDocumentMoniker": "Project1\\Perna.h",
@@ -131,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Perna.cpp",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Perna.cpp",
               "RelativeDocumentMoniker": "Project1\\Perna.cpp",
@@ -143,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Corpo.cpp",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Corpo.cpp",
               "RelativeDocumentMoniker": "Project1\\Corpo.cpp",
@@ -155,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Corpo.h",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Corpo.h",
               "RelativeDocumentMoniker": "Project1\\Corpo.h",
@@ -167,27 +169,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Garra.cpp",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.cpp",
               "RelativeDocumentMoniker": "Project1\\Garra.cpp",
               "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.cpp",
               "RelativeToolTip": "Project1\\Garra.cpp",
-              "ViewState": "AgIAALIAAAAAAAAAAAAAAH4AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAPMAAAAAAAAAAAD4v/cAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-05T13:18:20.679Z"
+              "WhenOpened": "2025-01-05T13:18:20.679Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "Garra.h",
               "DocumentMoniker": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.h",
               "RelativeDocumentMoniker": "Project1\\Garra.h",
               "ToolTip": "C:\\Users\\Teste\\Documents\\UERJ\\OpenGL_UERJ_Project\\Projeto_Final\\Project1\\Garra.h",
               "RelativeToolTip": "Project1\\Garra.h",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADIAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-05T13:18:17.774Z"
+              "WhenOpened": "2025-01-05T13:18:17.774Z",
+              "EditorCaption": ""
             }
           ]
         }

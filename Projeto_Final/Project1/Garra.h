@@ -27,6 +27,9 @@ public:
 	void setOrientation(float angleY);
 	void setTextureOn(bool);
 
+	float getAngleArm () const;
+	float getangleForearm() const;
+
 	enum
 	{
 		BRACO_ESQUERDO,

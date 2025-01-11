@@ -125,7 +125,7 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			if(tipoBraco == Garra::BRACO_ESQUERDO)
 			{
 				angleArm += 3;
-				if (angleArm >= 360) angleArm = 0;
+				if (angleArm >= 360) angleArm = 0;	
 			}
 			else if (tipoBraco == Garra::BRACO_DIREITO)
 			{
@@ -164,8 +164,8 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			glutPostRedisplay();
 			break;
 	}
-	//std::cout << "Tipo braco: " << ((tipoBraco == 0) ? "Braco Esquerdo" : "Braco Direito")
-	//		<< ", sizeArm : " << sizeArm << '\n';
+	std::cout << "Tipo braco: " << ((tipoBraco == 0) ? "Braco Esquerdo" : "Braco Direito")
+			<< ", angleForearm : " << angleForearm << '\n';
 }
 
 void Garra::garraDrawScene(void)
@@ -269,6 +269,16 @@ void Garra::setOrientation(float angleY)
 void Garra::setTextureOn(bool condition)
 {
 	textureOn = condition;
+}
+
+float Garra::getAngleArm() const
+{
+	return angleArm;
+}
+
+float Garra::getangleForearm() const
+{
+	return angleForearm;
 }
 
 
