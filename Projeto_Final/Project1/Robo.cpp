@@ -46,7 +46,6 @@ void Robo::roboHandleKeypress(unsigned char key, int x, int y)
 	switch (key)
 	{
 	case '1':
-		std::cout << "case 1" << '\n';
 		if ((garraEsquerda->getAngleArm() <= 126 && garraEsquerda->getAngleArm() >= 45) &&
 			(garraEsquerda->getangleForearm() >= 90 && garraEsquerda->getAngleArm() >= 45))
 		{
@@ -56,7 +55,6 @@ void Robo::roboHandleKeypress(unsigned char key, int x, int y)
 		}
 		break;
 	case '2':
-		std::cout << "case 2" << '\n';
 		if ((garraEsquerda->getAngleArm() <= 126 && garraEsquerda->getAngleArm() >= 45) &&
 			(garraEsquerda->getangleForearm() >= 90 && garraEsquerda->getAngleArm() >= 45))
 		{

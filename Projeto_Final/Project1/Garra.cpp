@@ -164,8 +164,8 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			glutPostRedisplay();
 			break;
 	}
-	std::cout << "Tipo braco: " << ((tipoBraco == 0) ? "Braco Esquerdo" : "Braco Direito")
-			<< ", angleForearm : " << angleForearm << '\n';
+	//std::cout << "Tipo braco: " << ((tipoBraco == 0) ? "Braco Esquerdo" : "Braco Direito")
+	//		<< ", angleForearm : " << angleForearm << '\n';
 }
 
 void Garra::garraDrawScene(void)

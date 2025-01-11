@@ -195,8 +195,16 @@ void Cabeca::cabecaHandleKeypress(unsigned char key, int x, int y)
 		case 27:
 			exit(0);
 			break;
-		case 'f':
-			fundo = ~fundo;
+		case 'o':
+			if(alturaCabeca < 50)
+				alturaCabeca += 2;
+
+			glutPostRedisplay();
+			break;
+		case 'p':
+			if (alturaCabeca > -26)
+				alturaCabeca -= 2;
+
 			glutPostRedisplay();
 			break;
 		default:
@@ -248,15 +256,6 @@ void Cabeca::cabecaDrawScene(void)
 {
 	EspecificaParametrosVisualizacao();
 
-	// Desenha esfera no fundo/background
-	if (fundo) {
-		glPushMatrix();
-			glTranslatef(10.0, 0, -80.0f);
-			glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
-			glutSolidSphere(30.0f, 72, 72);
-		glPopMatrix();
-	}
-
 	// Aplica rotacoes (pan)
 
 	glRotatef(rot_x, 1, 0, 0);
@@ -265,15 +264,17 @@ void Cabeca::cabecaDrawScene(void)
 	// Desenha pescoco (cone)
 	glColor4f(0.3f, 0.3f, 0.3f, 1.0f);
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);
-		glBindTexture(GL_TEXTURE_2D, _textureIdRugged);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-		gluQuadricTexture(quadRugged, TRUE);
-		gluCylinder(quadRugged, 10.0f, 7.5f, 21.5f, 72, 72);
-		glTranslatef(0.0f, 0.0f, 21.5f);
-
+		glPushMatrix();
+		glTranslatef(0.0f, 0.0f, -50.0f);
+			glBindTexture(GL_TEXTURE_2D, _textureIdRugged);
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+			gluQuadricTexture(quadRugged, TRUE);
+			gluCylinder(quadRugged, 10.0f, 7.5f, 60.5f, 72, 72);
+		glPopMatrix();
+		glTranslatef(0.0f, 0.0f, 10.0f);
 		glColor4f(0.3f, 0.3f, 0.3f, 1.0f);
 		glBindTexture(GL_TEXTURE_2D, _textureIdRusted);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -286,14 +287,14 @@ void Cabeca::cabecaDrawScene(void)
 	// Desenha haste para os olhos (paralelepipedo)
 	glColor4f(0.3f, 0.3f, 0.3f, 1.0f);
 	glPushMatrix();
-	glTranslatef(0.0f, 0.0f, posicaoCabeca);
+	glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		DesenhaCubo(_textureIdGolden, 30.0f, 3.0f, 1.5f);
 	glPopMatrix();
 
 	// Desenha olhos (esferas)
 	glColor4f(1.0f, 1.0f, 0.3f, 0.8f);
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(-25.0, 0, 2.0);
 		glBindTexture(GL_TEXTURE_2D, _textureIdGlass);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -302,7 +303,7 @@ void Cabeca::cabecaDrawScene(void)
 		gluSphere(quadGlass, 3.0f, 72, 72);
 	glPopMatrix();
 	glPushMatrix();
-	glTranslatef(0.0f, 0.0f, posicaoCabeca);
+	glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(25.0, 0, 2.0);
 		glBindTexture(GL_TEXTURE_2D, _textureIdGlass);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -314,69 +315,69 @@ void Cabeca::cabecaDrawScene(void)
 	// Desenha bastoes (cilindros e esferas)
 	glColor4f(0.5f, 0.5f, 0.5f, 1.0f);
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(0.0f, -7.0f, 0.0f);
 		glRotatef(30.0f, 0.0f, 1.0f, 0.0f);
 		glRotatef(3.0f, 1.0f, 0.0f, 0.0f);
 		DesenhaBastao(1.0f, 0.5f, 25.0f, 1.5, 1);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(0.0f, -7.0f, 0.0f);
 		glRotatef(75.0f, 0.0f, 1.0f, 0.0f);
 		glRotatef(-3.0f, 1.0f, 0.0f, 0.0f);
 		DesenhaBastao(1.0f, 0.5f, 25.0f, 1.5, 4);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(0.0f, -7.0f, 0.0f);
 		glRotatef(120.0f, 0.0f, 1.0f, 0.0f);
 		glRotatef(3.0f, 1.0f, 0.0f, 0.0f);
 		DesenhaBastao(1.0f, 0.5f, 25.0f, 1.5, 2);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(0.0f, -7.0f, 0.0f);
 		glRotatef(165.0f, 0.0f, 1.0f, 0.0f);
 		glRotatef(-3.0f, 1.0f, 0.0f, 0.0f);
 		DesenhaBastao(1.0f, 0.5f, 25.0f, 1.5, 3);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(0.0f, -7.0f, 0.0f);
 		glRotatef(210.0f, 0.0f, 1.0f, 0.0f);
 		glRotatef(3.0f, 1.0f, 0.0f, 0.0f);
 		DesenhaBastao(1.0f, 0.5f, 25.0f, 1.5, 1);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(0.0f, -7.0f, 0.0f);
 		glRotatef(255.0f, 0.0f, 1.0f, 0.0f);
 		glRotatef(-3.0f, 1.0f, 0.0f, 0.0f);
 		DesenhaBastao(1.0f, 0.5f, 25.0f, 1.5, 4);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(0.0f, -7.0f, 0.0f);
 		glRotatef(300.0f, 0.0f, 1.0f, 0.0f);
 		glRotatef(3.0f, 1.0f, 0.0f, 0.0f);
 		DesenhaBastao(1.0f, 0.5f, 25.0f, 1.5, 2);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(0.0f, -7.0f, 0.0f);
 		glRotatef(345.0f, 0.0f, 1.0f, 0.0f);
 		glRotatef(-3.0f, 1.0f, 0.0f, 0.0f);
 		DesenhaBastao(1.0f, 0.5f, 25.0f, 1.5, 3);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(15.0f, 2.0f, 0.0f);
 		glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);
 		DesenhaBastao(1.0f, 0.5f, 5.0f, 1.5, 1);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glTranslatef(-15.0f, 2.0f, 0.0f);
 		glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);
 		DesenhaBastao(1.0f, 0.5f, 5.0f, 1.5, 4);
@@ -384,7 +385,7 @@ void Cabeca::cabecaDrawScene(void)
 
 	// Desenha coroa
 	glPushMatrix();
-	glTranslatef(0.0f, 0.0f, posicaoCabeca);
+	glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glColor4f(0.3f, 0.3f, 0.3f, 1.0f);
 		glRotatef(-90.0f, 1.0f, 0.0f, 0.0f);
 		glBindTexture(GL_TEXTURE_2D, _textureIdRusted);
@@ -403,49 +404,49 @@ void Cabeca::cabecaDrawScene(void)
 
 	// Desenha as partes da coroa
 	glPushMatrix();
-	glTranslatef(0.0f, 0.0f, posicaoCabeca);
+	glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glRotatef(30.0f, 0.0f, 1.0f, 0.0f);
 		glTranslatef(0.0f, 5.0f, 9.0f);
 		DesenhaParteCoroa(2.0f, 5.0f, 6.0f, 5.0f);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glRotatef(75.0f, 0.0f, 1.0f, 0.0f);
 		glTranslatef(0.0f, 5.0f, 9.0f);
 		DesenhaParteCoroa(2.0f, 5.0f, 6.0f, 5.0f);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glRotatef(120.0f, 0.0f, 1.0f, 0.0f);
 		glTranslatef(0.0f, 5.0f, 9.0f);
 		DesenhaParteCoroa(2.0f, 5.0f, 6.0f, 5.0f);
 	glPopMatrix();
 	glPushMatrix();
-	glTranslatef(0.0f, 0.0f, posicaoCabeca);
+	glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glRotatef(165.0f, 0.0f, 1.0f, 0.0f);
 		glTranslatef(0.0f, 5.0f, 9.0f);
 		DesenhaParteCoroa(2.0f, 5.0f, 6.0f, 5.0f);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glRotatef(210.0f, 0.0f, 1.0f, 0.0f);
 		glTranslatef(0.0f, 5.0f, 9.0f);
 		DesenhaParteCoroa(2.0f, 5.0f, 6.0f, 5.0f);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glRotatef(255.0f, 0.0f, 1.0f, 0.0f);
 		glTranslatef(0.0f, 5.0f, 9.0f);
 		DesenhaParteCoroa(2.0f, 5.0f, 6.0f, 5.0f);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glRotatef(300.0f, 0.0f, 1.0f, 0.0f);
 		glTranslatef(0.0f, 5.0f, 9.0f);
 		DesenhaParteCoroa(2.0f, 5.0f, 6.0f, 5.0f);
 	glPopMatrix();
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glRotatef(345.0f, 0.0f, 1.0f, 0.0f);
 		glTranslatef(0.0f, 5.0f, 9.0f);
 		DesenhaParteCoroa(2.0f, 5.0f, 6.0f, 5.0f);
@@ -455,7 +456,7 @@ void Cabeca::cabecaDrawScene(void)
 	glEnable(GL_CULL_FACE);
 	glColor4f(0.4f, 0.4f, 0.4f, 0.5f);
 	glPushMatrix();
-		glTranslatef(0.0f, 0.0f, posicaoCabeca);
+		glTranslatef(0.0f, 0.0f + alturaCabeca, posicaoCabeca);
 		glScalef(1.0f, 0.4f, 1.0f);
 		glBindTexture(GL_TEXTURE_2D, _textureIdGlass);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);

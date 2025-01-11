@@ -38,6 +38,6 @@ private:
 	GLUquadric* quadGolden = nullptr;
 	GLUquadric* quadGlass = nullptr;
 	GLfloat angle, fAspect, rot_x, rot_y;
-	int fundo = 0;
+	float alturaCabeca{ 0.0f };
 };
 
