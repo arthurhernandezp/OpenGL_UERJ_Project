@@ -119,6 +119,41 @@ void Corpo::desenhaPainelControle()
 	glPopMatrix();
 }
 
+void Corpo::desenhaCintura()
+{
+	//Base pes 0
+	glColor4f(1.0f, 0.0f, 0.0f, 0.5f);
+
+	glPushMatrix();
+		glTranslatef(0.0f, -120.0f, 0.0f); // para chegar na base inf do amarelo 115
+		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
+
+		glScalef(1.0f, 0.2f, 1.0f);  // achatando
+		glutSolidSphere(50.0f, 42, 42);
+	glPopMatrix();
+
+	glColor4f(0.0f, 1.0f, 0.0f, 0.5f);
+
+	//Base pes 1
+	glPushMatrix();
+		glTranslatef(0.0f, -130.0f, 0.0f);
+		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
+		glScalef(1.0f, 0.2f, 1.0f);  // achatando
+		glutSolidSphere(50.0f, 42, 42);
+	glPopMatrix();
+
+	glColor4f(0.0f, 0.0f, 1.0f, 0.5f);
+	//Base pes 2    
+	glPushMatrix();
+		glTranslatef(0.0f, -140.0f, 0.0f);
+		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
+		glScalef(1.0f, 0.2f, 1.0f);  // achatando
+		glutSolidSphere(50.0f, 42, 42);
+	glPopMatrix();
+
+	glColor4f(1.0f, 0.0f, 1.0f, 0.5f);
+}
+
 void Corpo::corpoHandleKeypress(unsigned char key, int x, int y)
 {
 	switch (key)
@@ -139,5 +174,6 @@ void Corpo::corpoDrawScene(void)
 		desenhaOmbro();
 		desenhaTronco();
 		desenhaPainelControle();
+		desenhaCintura();
 	glPopMatrix();
 }

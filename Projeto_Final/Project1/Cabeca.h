@@ -22,6 +22,7 @@ public:
 	void cabecaHandleMouseEvent(int button, int state, int x, int y);
 	void cabecaDrawScene(void);
 	void cabecaAlteraJanela(GLsizei w, GLsizei h);
+	float posicaoCabeca{ 0.0f };
 
 private:
 	const char* filenameRugged = "../resource/texture_rugged_metal.bmp"; //image file with texture

@@ -19,6 +19,7 @@ public:
 	void roboAlteraJanela(GLsizei w, GLsizei h);
 
 private:
+	float posicaoRobo	{ 0.0f };
 	Cabeca * cabeca = nullptr;
 	Corpo * corpo = nullptr;
 	Garra * garraEsquerda = nullptr;
