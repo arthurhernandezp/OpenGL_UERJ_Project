@@ -17,6 +17,12 @@ public:
 	void DesenhaBastao(float diam_start, float diam_end, float lenght, float radius, int color);
 	void DesenhaParteCoroa(float base, float top, float length, float height);
 
+	void desenhaPescoco();
+	void desenhaOlhos();
+	void desenhaConjuntoBastao();
+	void desenhaCoroaCompleta();
+	void desenhaVidroCabeca();
+
 	void cabecaHandleKeypress(unsigned char key, int x, int y);
 	void cabecaHandleArrowpress(int key, int x, int y);
 	void cabecaHandleMouseEvent(int button, int state, int x, int y);
@@ -39,5 +45,7 @@ private:
 	GLUquadric* quadGlass = nullptr;
 	GLfloat angle, fAspect, rot_x, rot_y;
 	float alturaCabeca{ 0.0f };
+
+	float angleCabeca{ 0.0f };
 };
 
