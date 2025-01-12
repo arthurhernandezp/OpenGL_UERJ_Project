@@ -11,6 +11,11 @@ public:
 	Robo();
 	~Robo();
 
+	bool verificaAnguloBracos();
+	bool verificaTamanhoBraco();
+	bool verificaAnguloForearm();
+	bool verificaBracos();
+
 	void roboInicializa();
 	void roboHandleKeypress(unsigned char key, int x, int y);
 	void roboDrawScene(void);

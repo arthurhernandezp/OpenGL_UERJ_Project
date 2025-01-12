@@ -162,9 +162,9 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			break;
 	}
 	//std::cout << "Tipo braco: " << ((tipoBraco == 0) ? "Braco Esquerdo" : "Braco Direito")
-	//		<< ", sizeArm : " << sizeArm << '\n';
-	//std::cout << "Tipo braco: " << ((tipoBraco == 0) ? "Braco Esquerdo" : "Braco Direito")
-	//		<< ", angleForearm : " << angleForearm << '\n';
+	//		<< ", sizeArm : " << sizeArm << '\n'
+	//		<< ", angleForearm : " << angleForearm << '\n'
+	//		<< ", angleArm: " << angleArm << "\n";
 }
 
 void Garra::garraDrawScene(void)

@@ -27,6 +27,26 @@ Robo::~Robo()
 	delete perna;
 }
 
+bool Robo::verificaAnguloBracos()
+{
+	return (garraEsquerda->getAngleArm() <= 126 && garraEsquerda->getAngleArm() >= 45);
+}
+
+bool Robo::verificaTamanhoBraco()
+{
+	return (garraEsquerda->getSizeArm() <= 32.5);
+}
+
+bool Robo::verificaAnguloForearm()
+{
+	return (garraEsquerda->getangleForearm() >= 66);
+}
+
+bool Robo::verificaBracos()
+{
+	return (verificaAnguloBracos() && verificaTamanhoBraco() && verificaAnguloForearm());
+}
+
 void Robo::roboInicializa()
 {
 	garraEsquerda->initRendering();
@@ -46,9 +66,7 @@ void Robo::roboHandleKeypress(unsigned char key, int x, int y)
 	switch (key)
 	{
 	case 'w':
-		if ((garraEsquerda->getAngleArm() <= 126 && garraEsquerda->getAngleArm() >= 45) &&
-			 ( (garraEsquerda->getangleForearm() >= 90 && garraEsquerda->getAngleArm() >= 45) &&
-			(garraEsquerda->getSizeArm() <= 32.5)) )
+		if (verificaBracos())
 		{
 			posicaoRobo += 3;
 			cabeca->posicaoCabeca += 3;
@@ -56,10 +74,7 @@ void Robo::roboHandleKeypress(unsigned char key, int x, int y)
 		}
 		break;
 	case 's':
-		if ((garraEsquerda->getAngleArm() <= 126 && garraEsquerda->getAngleArm() >= 45) &&
-			(garraEsquerda->getangleForearm() >= 90 && garraEsquerda->getAngleArm() >= 45) && 
-			(garraEsquerda->getSizeArm() <= 32.5))
-
+		if (verificaBracos())
 		{
 			posicaoRobo -= 3;
 			cabeca->posicaoCabeca -= 3;
