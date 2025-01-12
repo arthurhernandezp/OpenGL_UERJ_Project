@@ -132,7 +132,7 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			glutPostRedisplay();
 			break;
 		case '1': //Aumenta o tamanho do braco
-			sizeArm += 4;
+			if(sizeArm <= 80) sizeArm += 4;
 			glutPostRedisplay();
 			break;
 		case '2': //Diminua o tamanho do braco

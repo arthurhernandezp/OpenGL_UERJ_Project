@@ -31,6 +31,16 @@ GLuint Corpo::loadTexture(const char* filename)
 
 void Corpo::desenhaOmbro()
 {
+	//Base pes 0
+	glColor4f(0.0f, 0.0f, 1.0f, 0.7f);
+
+	glPushMatrix();
+		glTranslatef(0.0f, -45.0f, 0.0f); // para chegar na base inf do amarelo 115
+		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
+
+		glScalef(1.0f, 0.1f, 1.0f);  // achatando
+		glutSolidSphere(50.0f, 42, 42);
+	glPopMatrix();
 	//Base ombros sup AZUL
 	glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
 	glPushMatrix();
@@ -47,6 +57,17 @@ void Corpo::desenhaOmbro()
 		glRotatef(90.0f, 1.0f, 0.0f, 0.0f);
 		gluQuadricTexture(quadRugged, TRUE);
 		gluCylinder(quadRugged, 50.0f, 30.0f, 10.0f, 32, 32);
+	glPopMatrix();
+
+	//Base pes 0
+	glColor4f(1.0f, 0.0f, 0.0f, 0.7f);
+
+	glPushMatrix();
+		glTranslatef(0.0f, -55.0f, 0.0f); // para chegar na base inf do amarelo 115
+		glRotatef(90.0f, 0.0f, 1.0f, 0.0f);
+
+		glScalef(1.0f, 0.2f, 1.0f);  // achatando
+		glutSolidSphere(50.0f, 42, 42);
 	glPopMatrix();
 }
 
