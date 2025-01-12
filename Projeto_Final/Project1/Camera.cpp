@@ -19,7 +19,7 @@ void Camera::EspecificaParametrosVisualizacao(void)
 	// Inicializa sistema de coordenadas do modelo
 	glLoadIdentity();
 	// Especifica posicao do observador e do alvo
-	gluLookAt(0, 0, 400, 0 , 30 , 0, 0, 1, 0);
+	gluLookAt(0 , 0 , 400, 0 + transladaX, 30 + transladaY, 0 , 0 , 1, 0);
 }
 
 
@@ -28,9 +28,12 @@ void Camera::update(void)
 {
 	glLoadIdentity();
 	EspecificaParametrosVisualizacao();
-	// Aplica rotacoes (pan)
+	// Aplica rotacoes (pan) para movimentação da camera
 	glRotatef(rot_x, 1, 0, 0);
 	glRotatef(rot_y, 0, 1, 0);
+
+	//glTranslatef(transladaX, 0.0f, 0.0f);
+	//glTranslatef(0.0f, transladaY, 0.0f);
 }
 
 void Camera::cameraAlteraJanela(GLsizei w, GLsizei h)
@@ -43,16 +46,16 @@ void Camera::cameraHandleArrowpress(int key, int x, int y)
 	switch (key)
 	{
 	case GLUT_KEY_UP:
-		rot_x += 6;
+		transladaY += 10;
 		break;
 	case GLUT_KEY_DOWN:
-		rot_x -= 6;
+		transladaY -= 10;
 		break;
 	case GLUT_KEY_LEFT:
-		rot_y -= 6;
+		transladaX -= 10;
 		break;
 	case GLUT_KEY_RIGHT:
-		rot_y += 6;
+		transladaX += 10;
 		break;
 	}
 	glutPostRedisplay();
@@ -66,13 +69,15 @@ void Camera::cameraHandleMotion(int x, int y)
 	if(estadoMouse == BOTAO_DIREITO_BAIXO)
 		(yNovo > yVelho) ? rot_y += 8 : rot_y -= 8;
 
+
 	if(estadoMouse == BOTAO_ESQUERDO_BAIXO)
 		(xNovo > xVelho) ? rot_x += 8 : rot_x -= 8;
 
-	glutPostRedisplay();
-
+	
 	xVelho = xNovo;
 	yVelho = yNovo;
+
+	glutPostRedisplay();
 }
 
 

@@ -428,7 +428,6 @@ void Cabeca::cabecaHandleKeypress(unsigned char key, int x, int y)
 				angleCabeca = 0;
 
 			glutPostRedisplay();
-			std::cout << "angleCabeca: " << angleCabeca << '\n';
 			break;
 		case 'p':
 			if(alturaCabeca < 40)

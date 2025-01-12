@@ -19,8 +19,12 @@ private:
 	GLfloat fAspect{};
 	GLfloat rot_x{};
 	GLfloat rot_y{};
+
 	int xNovo{}; int xVelho{};
 	int yNovo{}; int yVelho{};
+
+	GLfloat transladaX{};
+	GLfloat transladaY{};
 
 	enum
 	{
