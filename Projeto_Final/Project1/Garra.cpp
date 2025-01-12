@@ -105,27 +105,11 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 	{
 		case 27: //Escape key
 			exit(0);
-		case 'w': //Aumenta o tamanho do braco
-			sizeArm += 4;
-			glutPostRedisplay();
-			break;
-		case 's': //Diminua o tamanho do braco
-			if (sizeArm > 8.5) sizeArm -= 4;
-			glutPostRedisplay();
-			break;
-		case 'a': //Decrease view angle x axis
-			if (viewAngleX > 0) viewAngleX -= 3;
-			glutPostRedisplay();
-			break;
-		case 't': //Use texture or not
-			textureOn = !textureOn;
-			glutPostRedisplay();
-			break;
-		case '1': //Increase arm angle
-			if(tipoBraco == Garra::BRACO_ESQUERDO)
+		case 'w': //Increase arm angle
+			if (tipoBraco == Garra::BRACO_ESQUERDO)
 			{
 				angleArm += 3;
-				if (angleArm >= 360) angleArm = 0;	
+				if (angleArm >= 360) angleArm = 0;
 			}
 			else if (tipoBraco == Garra::BRACO_DIREITO)
 			{
@@ -134,7 +118,7 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			}
 			glutPostRedisplay();
 			break;
-		case '2': //Decrease arm angle
+		case 's': //Decrease arm angle
 			if (tipoBraco == Garra::BRACO_ESQUERDO)
 			{
 				angleArm -= 3;
@@ -145,6 +129,19 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 				angleArm += 3;
 				if (angleArm >= 360) angleArm = 0;
 			}
+			glutPostRedisplay();
+			break;
+		case '1': //Aumenta o tamanho do braco
+			sizeArm += 4;
+			glutPostRedisplay();
+			break;
+		case '2': //Diminua o tamanho do braco
+			if (sizeArm > 8.5) sizeArm -= 4;
+			glutPostRedisplay();
+			break;
+
+		case 't': //Use texture or not
+			textureOn = !textureOn;
 			glutPostRedisplay();
 			break;
 		case '3': //Increase forearm angle

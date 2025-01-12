@@ -58,10 +58,33 @@ void Camera::cameraHandleArrowpress(int key, int x, int y)
 	glutPostRedisplay();
 }
 
+void Camera::cameraHandleMotion(int x, int y)
+{
+	xNovo = y;
+	yNovo = x;
+
+	if(estadoMouse == BOTAO_DIREITO_BAIXO)
+		(yNovo > yVelho) ? rot_y += 8 : rot_y -= 8;
+
+	if(estadoMouse == BOTAO_ESQUERDO_BAIXO)
+		(xNovo > xVelho) ? rot_x += 8 : rot_x -= 8;
+
+	glutPostRedisplay();
+
+	xVelho = xNovo;
+	yVelho = yNovo;
+}
+
 
 void Camera::cameraHandleMouseEvent(int button, int state, int x, int y)
 {
+	if (button == GLUT_LEFT_BUTTON)
+		(state == GLUT_DOWN) ? (estadoMouse = Camera::BOTAO_ESQUERDO_BAIXO) : (estadoMouse = Camera::BOTAO_ESQUERDO_CIMA);
 
+	if (button == GLUT_RIGHT_BUTTON)
+		(state == GLUT_DOWN) ? (estadoMouse = Camera::BOTAO_DIREITO_BAIXO) : (estadoMouse = Camera::BOTAO_DIREITO_CIMA);
+
+	//Rodinha do mouse
 	if (button == 3)
 	{
 		if (angle >= 10) angle -= 5;

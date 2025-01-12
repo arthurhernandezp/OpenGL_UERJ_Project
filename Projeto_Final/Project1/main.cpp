@@ -9,6 +9,7 @@ void AlteraTamanhoJanela(GLsizei w, GLsizei h);
 void GerenciaMouse(int button, int state, int x, int y);
 void GerenciaTeclado(unsigned char key, int x, int y);
 void GerenciaSetas(int key, int x, int y);
+void GerenciaMovimentoMouse(int x, int y);
 
 // Programa Principal
 int main(int argc, char** argv)
@@ -22,6 +23,7 @@ int main(int argc, char** argv)
 	glutMouseFunc(GerenciaMouse);
 	glutKeyboardFunc(GerenciaTeclado);
 	glutSpecialFunc(GerenciaSetas);
+	glutMotionFunc(GerenciaMovimentoMouse);
 	robo.roboInicializa();
 	glutMainLoop();
 }
@@ -60,4 +62,9 @@ void GerenciaTeclado(unsigned char key, int x, int y)
 void GerenciaSetas(int key, int x, int y)
 {
 	camera.cameraHandleArrowpress(key, x, y);
+}
+
+void GerenciaMovimentoMouse(int x, int y)
+{
+	camera.cameraHandleMotion(x, y);
 }

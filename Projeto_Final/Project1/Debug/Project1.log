@@ -1,3 +1,14 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: O diretório intermediário (Debug\) contém arquivos compartilhados de outro projeto (Project1.vcxproj). Isso pode levar a um comportamento incorreto de limpeza e recompilação.
-  Robo.cpp
+  Garra.cpp
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(48,40): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(48,34): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(65,60): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(65,54): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(82,62): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(82,49): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(99,69): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(99,56): warning C4244: 'argumento': conversão de 'double' para 'GLint', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(172,50): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(173,50): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Project1\Garra.cpp(174,21): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
   Project1.vcxproj -> C:\Users\Teste\Documents\UERJ\OpenGL_UERJ_Project\Projeto_Final\Debug\ProjetoUERJ.exe
