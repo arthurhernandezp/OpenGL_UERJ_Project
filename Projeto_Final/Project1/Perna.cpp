@@ -75,22 +75,18 @@ void Perna::desenhaRoda()
 
 void Perna::desenhaSuporteRoda()
 {
-
 	glPushMatrix(); //Retangulo esquerdo
-		glColor4f(0.0f, 0.0f, 1.0f, 0.5f);
-		glTranslatef(-22.0f, -155.0f, 0.0f);  // Cubo
-		glEnable(GL_TEXTURE_2D);
-		glBindTexture(GL_TEXTURE_2D, _textureIdRusted);
+		glColor4f(1.0f, 1.0f, 1.0f, 0.3f);
+		glTranslatef(-22.0f, -155.0f, 0.0f);  // Cubo;
 		glScalef(0.5f, 0.2f, 1.0f);
 		glutSolidCube(80.0f);
 	glPopMatrix();
 
 	glPushMatrix(); //Retangulo direito
-		glColor4f(0.0f, 0.0f, 1.0f, 0.5f);
+		glColor4f(1.0f, 1.0f, 1.0f, 0.3f);
 		glTranslatef(22.0f, -155.0f, 0.0f);  // Cubo
-		glEnable(GL_TEXTURE_2D);
-		glBindTexture(GL_TEXTURE_2D, _textureIdRusted);
 		glScalef(0.5f, 0.2f, 1.0f);
+		gluQuadricTexture(quadRusted, TRUE);
 		glutSolidCube(80.0f);
 	glPopMatrix();
 }
