@@ -47,19 +47,22 @@ void Robo::roboHandleKeypress(unsigned char key, int x, int y)
 	{
 	case '1':
 		if ((garraEsquerda->getAngleArm() <= 126 && garraEsquerda->getAngleArm() >= 45) &&
-			(garraEsquerda->getangleForearm() >= 90 && garraEsquerda->getAngleArm() >= 45))
+			 ( (garraEsquerda->getangleForearm() >= 90 && garraEsquerda->getAngleArm() >= 45) &&
+			(garraEsquerda->getSizeArm() <= 32.5)) )
 		{
-			posicaoRobo += 3;
-			cabeca->posicaoCabeca += 3;
+			posicaoRobo -= 3;
+			cabeca->posicaoCabeca -= 3;
 			glutPostRedisplay();
 		}
 		break;
 	case '2':
 		if ((garraEsquerda->getAngleArm() <= 126 && garraEsquerda->getAngleArm() >= 45) &&
-			(garraEsquerda->getangleForearm() >= 90 && garraEsquerda->getAngleArm() >= 45))
+			(garraEsquerda->getangleForearm() >= 90 && garraEsquerda->getAngleArm() >= 45) && 
+			(garraEsquerda->getSizeArm() <= 32.5))
+
 		{
-			posicaoRobo -= 3;
-			cabeca->posicaoCabeca -= 3;
+			posicaoRobo += 3;
+			cabeca->posicaoCabeca += 3;
 			glutPostRedisplay();
 		}
 		break;

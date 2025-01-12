@@ -19,12 +19,12 @@ void Camera::EspecificaParametrosVisualizacao(void)
 	// Inicializa sistema de coordenadas do modelo
 	glLoadIdentity();
 	// Especifica posicao do observador e do alvo
-	gluLookAt(0, 0, 400, 0, 30, 0, 0, 1, 0);
+	gluLookAt(0, 0, 400, 0 , 30 , 0, 0, 1, 0);
 }
 
 
 
-void Camera::update()
+void Camera::update(void)
 {
 	glLoadIdentity();
 	EspecificaParametrosVisualizacao();
@@ -61,20 +61,16 @@ void Camera::cameraHandleArrowpress(int key, int x, int y)
 
 void Camera::cameraHandleMouseEvent(int button, int state, int x, int y)
 {
-	if (button == GLUT_LEFT_BUTTON)
+
+	if (button == 3)
 	{
-		if (state == GLUT_DOWN) // Zoom-in
-		{
-			if (angle >= 10) angle -= 5;
-		}
+		if (angle >= 10) angle -= 5;
 	}
-	if (button == GLUT_RIGHT_BUTTON)
+	if (button == 4)
 	{
-		if (state == GLUT_DOWN) // Zoom-out
-		{
-			if (angle <= 130) angle += 5;
-		}
+		if (angle <= 130) angle += 5;	
 	}
+
 	//EspecificaParametrosVisualizacao();
 	glutPostRedisplay();
 }

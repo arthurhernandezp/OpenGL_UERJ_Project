@@ -165,6 +165,8 @@ void Garra::garraHandleKeypress(unsigned char key, int x, int y)
 			break;
 	}
 	//std::cout << "Tipo braco: " << ((tipoBraco == 0) ? "Braco Esquerdo" : "Braco Direito")
+	//		<< ", sizeArm : " << sizeArm << '\n';
+	//std::cout << "Tipo braco: " << ((tipoBraco == 0) ? "Braco Esquerdo" : "Braco Direito")
 	//		<< ", angleForearm : " << angleForearm << '\n';
 }
 
@@ -279,6 +281,11 @@ float Garra::getAngleArm() const
 float Garra::getangleForearm() const
 {
 	return angleForearm;
+}
+
+float Garra::getSizeArm() const
+{
+	return sizeArm;
 }
 
 

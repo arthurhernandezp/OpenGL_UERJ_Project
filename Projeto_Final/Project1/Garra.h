@@ -29,6 +29,7 @@ public:
 
 	float getAngleArm () const;
 	float getangleForearm() const;
+	float getSizeArm() const;
 
 	enum
 	{

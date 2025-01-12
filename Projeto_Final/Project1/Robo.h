@@ -14,9 +14,8 @@ public:
 	void roboInicializa();
 	void roboHandleKeypress(unsigned char key, int x, int y);
 	void roboDrawScene(void);
-
+	float posicaoRobo{ 0.0f };
 private:
-	float posicaoRobo	{ 0.0f };
 	Cabeca * cabeca = nullptr;
 	Corpo * corpo = nullptr;
 	Garra * garraEsquerda = nullptr;
