@@ -75,6 +75,14 @@ Para movimentar o robô, utilize a mecânica onde apenas o próprio robô conseg
 |                            | Mover o robô para frente         | `w`     |
 |                            | Mover o robô para trás           | `s`     |
 
+## Imagens do Robô
+Aqui estão algumas imagens ilustrando o funcionamento do robô:
+
+![Robo 1](images/robo1.png)
+![Robo 2](images/robo2.png)
+![Robo 3](images/robo3.png)
+![Robo 4](images/robo4.png)
+
 ## Como Executar o Projeto
 1. Clone este repositório:
    ```sh
@@ -92,3 +100,4 @@ Para movimentar o robô, utilize a mecânica onde apenas o próprio robô conseg
 
 ---
 Este documento serve como um guia rápido para uso do software. Para mais informações, consulte a documentação completa no repositório.
+
