@@ -8,6 +8,9 @@ Aqui estão algumas imagens ilustrando o funcionamento do robô:
 
 ![Robo](images/robo.png)
 
+## Diagrama de classe do robo
+![Class Diagram](images/DIAGRAMA_CLASSE.png)
+
 ## Controles do Robô
 
 ### Movimentação da Cabeça
