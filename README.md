@@ -3,6 +3,11 @@
 ## Introdução
 Este projeto foi desenvolvido para a disciplina de Computação Gráfica e permite controlar um robô utilizando teclas específicas e o mouse.
 
+## Imagens do Robô
+Aqui estão algumas imagens ilustrando o funcionamento do robô:
+
+![Robo](images/robo.png)
+
 ## Controles do Robô
 
 ### Movimentação da Cabeça
@@ -74,26 +79,6 @@ Para movimentar o robô, utilize a mecânica onde apenas o próprio robô conseg
 |                            | Colocar o braço mais colado ao corpo | `3` |
 |                            | Mover o robô para frente         | `w`     |
 |                            | Mover o robô para trás           | `s`     |
-
-## Imagens do Robô
-Aqui estão algumas imagens ilustrando o funcionamento do robô:
-
-![Robo](images/robo.png)
-
-## Como Executar o Projeto
-1. Clone este repositório:
-   ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
-2. Acesse a pasta do projeto:
-   ```sh
-   cd seu-repositorio
-   ```
-3. Compile e execute o código seguindo as instruções fornecidas no projeto.
-
-## Autores
-- **Arthur Hernandez Perez**
-- **Mariana Martins Chagas**
 
 ---
 Este documento serve como um guia rápido para uso do software. Para mais informações, consulte a documentação completa no repositório.
