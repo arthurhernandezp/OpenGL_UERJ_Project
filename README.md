@@ -7,6 +7,54 @@ Este projeto foi desenvolvido para a disciplina de Computação Gráfica e permi
 Aqui estão algumas imagens ilustrando o funcionamento do robô:
 
 ![Robo](images/robo.png)
+Diagrama de Classes
+
+Abaixo está o diagrama de classes do projeto, gerado com Mermaid.js:
+
+tclassDiagram
+    class Robo {
+        +Robo()
+        +~Robo()
+        +bool verificaAnguloBracos()
+        +bool verificaTamanhoBraco()
+        +bool verificaAnguloForearm()
+        +bool verificaBracos()
+        +void roboInicializa()
+        +void roboHandleKeypress(unsigned char key, int x, int y)
+        +void roboDrawScene()
+        +float posicaoRobo
+        -Cabeca *cabeca
+        -Corpo *corpo
+        -Garra *garraEsquerda
+        -Garra *garraDireita
+        -Perna *perna
+    }
+
+    class Cabeca {
+        +void cabecaHandleKeypress(unsigned char key, int x, int y)
+        +void cabecaDrawScene()
+    }
+
+    class Corpo {
+        +void corpoHandleKeypress(unsigned char key, int x, int y)
+        +void corpoDrawScene()
+    }
+
+    class Garra {
+        +void garraHandleKeypress(unsigned char key, int x, int y)
+        +void garraDrawScene()
+    }
+
+    class Perna {
+        +void pernaHandleKeypress(unsigned char key, int x, int y)
+        +void pernaDrawScene()
+    }
+
+    Robo --> Cabeca
+    Robo --> Corpo
+    Robo --> Garra : garraEsquerda
+    Robo --> Garra : garraDireita
+    Robo --> Perna
 
 ## Controles do Robô
 
