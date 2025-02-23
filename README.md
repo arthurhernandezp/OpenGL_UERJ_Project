@@ -78,10 +78,7 @@ Para movimentar o robô, utilize a mecânica onde apenas o próprio robô conseg
 ## Imagens do Robô
 Aqui estão algumas imagens ilustrando o funcionamento do robô:
 
-![Robo 1](images/robo1.png)
-![Robo 2](images/robo2.png)
-![Robo 3](images/robo3.png)
-![Robo 4](images/robo4.png)
+![Robo](images/robo.png)
 
 ## Como Executar o Projeto
 1. Clone este repositório:
